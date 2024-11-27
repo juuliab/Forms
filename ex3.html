@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <form action="">
+            <input type="text" id="txt1">
+            <input type="text" id="txt2">
+            <input type="text" id="txt3">
+        </form>
+        <a href="ex1.html">Задание 1</a>
+        <a href="index.html">Задание 2</a>
+        <a href="ex4.html">Задание 4</a>
+        <script>
+            let elems=document.querySelectorAll("input[type=text]");
+            for(let i=0;1<elems.length;i++){
+                elems[i].onmouseover=function(){
+                    elems[i].focus();
+                    elems[i].value=elems[i].id;
+                }
+                elems[i].onmouseout=function(){
+                    elems[i].blur();
+                    elems[i].value="";
+                }
+            }
+            /* 
+            //для 1 текстового поля
+            document.body.onmouseover=function(){
+                let elem=event.target;
+                if (elem.type=="text"){
+                    elem.focus();
+                    elem.value=elem.id;
+                }
+            }
+            document.body.onmouseout=function(){
+                let elem=event.target;
+                if (elem.type=="text"){
+                    elem.blur();
+                    elem.value="";
+                }
+            }
+            */
+        </script>
+    </body>
+</html>

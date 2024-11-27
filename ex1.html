@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex1</title>
+</head>
+    <body>
+        <form action="" id="f1">
+            <input type="text" name="" id="txt1">
+            <input type="checkbox" name="" id="c1">
+            <input type="button" id="btn" value="press me">
+        </form>
+        <a href="index.html">Задание 2</a>
+        <a href="ex3.html">Задание 3</a>
+        <a href="ex4.html">Задание 4</a>
+        <script>
+            document.getElementById("btn").onclick=function(){
+            let flag=confirm("Выполнить действие?");
+            if (flag){
+                document.getElementById("c1").checked=true;
+                document.getElementById("txt1").value="Hello!"
+            }
+            else
+                document.getElementById("f1").reset();
+        }
+        </script>
+    </body>
+
+</html>

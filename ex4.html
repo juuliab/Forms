@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex4</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <form action="">
+            <p>
+                <input type="checkbox" name="" checked>
+                <input type="text" name="">
+            </p>
+            <p>
+                <input type="checkbox" name="" checked>
+                <input type="text" name="">
+            </p>
+        </form>
+        <a href="ex1.html">Задание 1</a>
+        <a href="index.html">Задание 2</a>
+        <a href="ex4.html">Задание 4</a>
+        <script>
+            let checks=document.querySelectorAll("input[type=checkbox]");
+            for(let i=0;1<checks.length;i++){
+                checks[i].onclick=function(){
+                    checks[i].nextElementSibling.hidden=!checks[i].cheked;
+                }
+            }
+            /* 
+            //для 1 чекбокса и текстового поля
+            document.getElementById("c1").onclick=function(){
+                document.getElementById("txt1").disabled=!document.getElementById("c1").cheked;
+            }
+            */
+        </script>
+    </body>
+</html>

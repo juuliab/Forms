@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <form action="">
+            <input type="text" id="txt1">
+            <p>
+                <input type="button" id="lock" value="lock">
+                <input type="button" id="unlock" value="unlock">
+            </p>
+        </form>
+        <a href="ex1.html">Задание 1</a>
+        <a href="ex3.html">Задание 3</a>
+        <a href="ex4.html">Задание 4</a>
+        <script>
+            document.getElementById("lock").onclick=function(){
+                document.getElementById("txt1").disabled=true;
+            }
+            document.getElementById("unlock").onclick=function(){
+                document.getElementById("txt1").disabled=false;
+            }
+        </script>
+    </body>
+</html>
